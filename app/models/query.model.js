@@ -6,7 +6,6 @@ const Query = function (query) {
   this.name = query.name;
   this.email = query.email;
   this.number = query.number;
-  this.date = Date.now();
 };
 
 Query.create = (newQuery, result) => {

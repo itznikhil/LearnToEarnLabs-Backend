@@ -3,7 +3,6 @@ const sql = require("./db.js");
 // constructor
 const Syllabus = function (syllabus) {
   this.number = syllabus.number;
-  this.date = Date.now();
 };
 
 Syllabus.create = (newSyllabus, result) => {
