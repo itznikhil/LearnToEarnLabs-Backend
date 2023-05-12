@@ -6,6 +6,8 @@ const Query = function (query) {
   this.name = query.name;
   this.email = query.email;
   this.number = query.number;
+  this.datetime = query.datetime;
+  this.specialization = query.specialization;
 };
 
 Query.create = (newQuery, result) => {

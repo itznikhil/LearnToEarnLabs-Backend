@@ -11,7 +11,9 @@ exports.create = (req, res) => {
 
   // Create a Syllabus
   const syllabus = new Syllabus({
-    number: req.body.number,
+    email: req.body.email,
+    specialization: req.body.specialization,
+    datetime: req.body.datetime,
   });
 
   // Save Syllabus in the database

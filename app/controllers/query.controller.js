@@ -11,10 +11,12 @@ exports.create = (req, res) => {
 
   // Create a Query
   const query = new Query({
-    name: req.body.name,
-    email: req.body.email,
-    number: req.body.number,
-    profession: req.body.profession,
+    profession:req.body.profession,
+    name:req.body.name,
+    email:req.body.email,
+    number:req.body.number,
+    datetime:req.body.datetime,
+    specialization:req.body.specialization,
   });
 
   // Save Query in the database

@@ -20,11 +20,13 @@ app.use(
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to learn2earnlabs application." });
+  res.json({ message: "Welcome to Learn2EarnLabs application." });
 });
 
 require("./app/routes/query.routes.js")(app);
 require("./app/routes/syllabus.routes.js")(app);
+require("./app/routes/certificate.routes.js")(app);
+require("./app/routes/cashback.routes.js")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;

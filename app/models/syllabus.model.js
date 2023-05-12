@@ -2,7 +2,9 @@ const sql = require("./db.js");
 
 // constructor
 const Syllabus = function (syllabus) {
-  this.number = syllabus.number;
+  this.email = syllabus.email;
+  this.datetime = syllabus.datetime;
+  this.specialization = syllabus.specialization;
 };
 
 Syllabus.create = (newSyllabus, result) => {
@@ -58,8 +60,8 @@ Syllabus.getAll = (number, result) => {
 
 Syllabus.updateById = (id, syllabus, result) => {
   sql.query(
-    "UPDATE syllabuses SET number = ? WHERE id = ?",
-    [syllabus.number, id],
+    "UPDATE syllabuses SET email = ? WHERE id = ?",
+    [syllabus.email, id],
     (err, res) => {
       if (err) {
         console.log("error: ", err);

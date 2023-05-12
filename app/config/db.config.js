@@ -1,6 +1,7 @@
 module.exports = {
-  HOST: "46.17.175.136",
-  USER: "u458437130_newsite",
-  PASSWORD: "123@Learn#",
-  DB: "u458437130_newsite",
+  HOST: "45.84.207.102",
+  USER: "u458437130_Nikhil",
+  PASSWORD: "Riddhima1",
+  DB: "u458437130_myDB",
+
 };
