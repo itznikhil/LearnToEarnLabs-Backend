@@ -33,9 +33,9 @@ exports.create = (req, res) => {
 
 // Retrieve all certificates from the database (with condition).
 exports.findAll = (req, res) => {
-  const enrollmentNo = req.query.enrollmentNo;
+  const certificateCode = req.query.certificateCode;
 
-  Certificate.getAll(enrollmentNo, (err, data) => {
+  Certificate.getAll(certificateCode, (err, data) => {
     if (err)
       res.status(500).send({
         message:
