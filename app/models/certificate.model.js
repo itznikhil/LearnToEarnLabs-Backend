@@ -43,11 +43,11 @@ Certificate.findById = (id, result) => {
   });
 };
 
-Certificate.getAll = (enrollmentNo, result) => {
+Certificate.getAll = (certificateCode, result) => {
   let query = "SELECT * FROM certificates";
 
-  if (enrollmentNo) {
-    query += ` WHERE enrollmentNo LIKE '%${enrollmentNo}%'`;
+  if (certificateCode) {
+    query += ` WHERE certificateCode LIKE '%${certificateCode}%'`;
   }
 
   sql.query(query, (err, res) => {
